@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function Body() {
   return (
     <>
@@ -19,12 +21,16 @@ export default function Body() {
                   Course Examiner is a secure and user-friendly online platform
                   that allows students to take entrance exams anytime and
                   anywhere. It streamlines the testing process, provides instant
-                  submissions, and helps schools efficiently evaluate applicants.
+                  submissions, and helps schools efficiently evaluate
+                  applicants.
                 </p>
                 <div className="w-full flex justify-end">
-                  <button className="border border-blue-500 rounded-xl px-6 py-3 font-medium hover:border-transparent hover:bg-blue-500 hover:text-white hover:shadow active:bg-blue-700 transition">
+                  <NavLink
+                    to="/Form"
+                    className="border border-blue-500 rounded-xl px-6 py-3 font-medium hover:border-transparent hover:bg-blue-500 hover:text-white hover:shadow active:bg-blue-700 transition"
+                  >
                     Get Started
-                  </button>
+                  </NavLink>
                 </div>
               </div>
             </div>

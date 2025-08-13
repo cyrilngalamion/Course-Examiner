@@ -1,13 +1,23 @@
-import Body from "./components/Body";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import {
+  Routes,
+  Route,
+} from 'react-router-dom'
+import LandingPage from './pages/LandingPage';
+import LoginPage from './pages/LoginPage';
+import Form from './pages/Form';
 
+
+ 
 function App() {
   return (
     <>
-    <Header/>
-    <Body/>
-    <Footer/>
+      <Routes>
+        <Route>
+          <Route path="/" element={<LandingPage />}/>
+          <Route path="LoginPage" element={<LoginPage />}/>
+          <Route path="Form" element={<Form />}/>
+        </Route>
+      </Routes>
     </>
   );
 }
